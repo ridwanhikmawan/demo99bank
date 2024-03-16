@@ -23,7 +23,7 @@ public class TC_LoginDDT_002 extends BaseClass
 		logger.info("password provided");
 		lp.clickSubmit();
 		
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		if(isAlertPresent()==true)
 		{
@@ -37,7 +37,7 @@ public class TC_LoginDDT_002 extends BaseClass
 			Assert.assertTrue(true);
 			logger.info("Login passed");
 			lp.clickLogout();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			driver.switchTo().alert().accept();//close logout alert
 			driver.switchTo().defaultContent();
 			
